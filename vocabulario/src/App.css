@@ -6,6 +6,7 @@ body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  text-align: center;
 }
 
 .App-header {
@@ -43,6 +44,29 @@ button:hover {
   margin-top: 20px;
 }
 
-h1, h2, h3 {
-  color: #333;
+.resposta-mensagem {
+  margin-top: 20px;
+  font-size: 18px;
+  padding: 10px;
+  border-radius: 5px;
+  animation: fadeIn 1s ease-in-out;
+}
+
+.resposta-mensagem.acertou {
+  background-color: #4caf50;
+  color: white;
+}
+
+.resposta-mensagem.errou {
+  background-color: #f44336;
+  color: white;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
